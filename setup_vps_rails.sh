@@ -5,8 +5,8 @@ YELLOW='\033[1;33m'
 GREEN='\033[1;32m'
 RED='\033[0;31m'
 NEUTRO='\033[0m'
-###############################################################
-echo 
+###########################################################################
+echo
 echo "${YELLOW} executando apt-get update ${NEUTRO}"
 echo
 if ! apt-get update; then
@@ -15,7 +15,7 @@ if ! apt-get update; then
 fi
 echo
 echo "${GREEN} apt-get update executado com sucesso ${NEUTRO}"
-###############################################################
+###########################################################################
 echo
 echo "${YELLOW} executando apt-get upgrade -y ${NEUTRO}"
 echo
@@ -25,11 +25,15 @@ if ! apt-get upgrade -y; then
 fi
 echo
 echo "${GREEN} apt-get upgrade -y executado com sucesso ${NEUTRO}"
-###############################################################
+############################################################################
 
-### note que $1 aqui será substituído pelo Bash pelo primeiro argumento passado em linha de comando
-# if ! apt-get install $1; then
-#     echo “Não foi possível instalar o pacote $1”
+############################################################################
+### Trecho de código para inserir o nome de um programa a instalar
+# echo "${YELLOW} Digite o nome do programa que deseja instalar: ${NEUTRO}"
+# read PROGRAMA
+# if ! apt-get install $PROGRAMA; then
+#     echo "${RED} erro ao tentar instalar: $PROGRAMA ${NEUTRO}"
 #     exit 1
 # fi
-# echo “Instalação finalizada”
+# echo "${GREEN} Fim da instalação ${NEUTRO}"
+#############################################################################
