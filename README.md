@@ -11,7 +11,7 @@ Meu LinkedIn: https://www.linkedin.com/in/adyson-lima-programador/
 Este script **instala** e **configura** servidores VPS Linux para deploy de aplicações Ruby on Rails.
 
 ## Layout da execução
-<img src="https://github.com/Adyson-Lima-Programador/setup_vps_rails/imagem/setup.png" alt="setup.png"/>
+<img src="https://github.com/Adyson-Lima-Programador/setup_vps_rails/blob/main/imagem/setup.png" alt="setup.png"/>
 
 ## Tecnologias utilizadas
 
