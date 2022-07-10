@@ -17,54 +17,64 @@ echo
 echo "${GREEN} atualização do PATH executada com sucesso ${NEUTRO}"
 ############################################################################
 echo
-echo "${YELLOW} executando apt-get update ${NEUTRO}"
+echo "${YELLOW} executando apt update ${NEUTRO}"
 echo
-if ! apt-get update; then
-    echo "${RED} erro ao executar apt-get update ${NEUTRO}"
+if ! apt update; then
+    echo "${RED} erro ao executar apt update ${NEUTRO}"
     exit 1
 fi
 echo
-echo "${GREEN} apt-get update executado com sucesso ${NEUTRO}"
+echo "${GREEN} apt update executado com sucesso ${NEUTRO}"
 ###########################################################################
 echo
-echo "${YELLOW} executando apt-get upgrade -y ${NEUTRO}"
+echo "${YELLOW} executando apt upgrade -y ${NEUTRO}"
 echo
-if ! apt-get upgrade -y; then
-    echo "${RED} erro ao executar apt-get upgrade -y ${NEUTRO}"
+if ! apt upgrade -y; then
+    echo "${RED} erro ao executar apt upgrade -y ${NEUTRO}"
     exit 1
 fi
 echo
 echo "${GREEN} apt-get upgrade -y executado com sucesso ${NEUTRO}"
 ############################################################################
 echo
-echo "${YELLOW} executando apt-get install git -y ${NEUTRO}"
+echo "${YELLOW} executando apt install postgresql -y ${NEUTRO}"
 echo
-if ! apt-get install git -y; then
-    echo "${RED} erro ao executar apt-get install git -y ${NEUTRO}"
+if ! apt install postgresql -y; then
+    echo "${RED} erro ao executar apt install postgresql -y ${NEUTRO}"
     exit 1
 fi
 echo
-echo "${GREEN} apt-get install git -y executado com sucesso ${NEUTRO}"
+echo "${GREEN} apt-get install postgresql -y executado com sucesso ${NEUTRO}"
 ############################################################################
 echo
-echo "${YELLOW} executando apt-get install curl -y ${NEUTRO}"
+echo "${YELLOW} executando apt install git -y ${NEUTRO}"
 echo
-if ! apt-get install curl -y; then
-    echo "${RED} erro ao executar apt-get install curl -y ${NEUTRO}"
+if ! apt install git -y; then
+    echo "${RED} erro ao executar apt install git -y ${NEUTRO}"
     exit 1
 fi
 echo
-echo "${GREEN} apt-get install curl -y executado com sucesso ${NEUTRO}"
+echo "${GREEN} apt install git -y executado com sucesso ${NEUTRO}"
 ############################################################################
 echo
-echo "${YELLOW} executando apt-get install gnupg2 -y ${NEUTRO}"
+echo "${YELLOW} executando apt install curl -y ${NEUTRO}"
 echo
-if ! apt-get install gnupg2 -y; then
-    echo "${RED} erro ao executar apt-get install gnupg2 -y ${NEUTRO}"
+if ! apt install curl -y; then
+    echo "${RED} erro ao executar apt install curl -y ${NEUTRO}"
     exit 1
 fi
 echo
-echo "${GREEN} apt-get install gnupg2 -y executado com sucesso ${NEUTRO}"
+echo "${GREEN} apt install curl -y executado com sucesso ${NEUTRO}"
+############################################################################
+echo
+echo "${YELLOW} executando apt install gnupg2 -y ${NEUTRO}"
+echo
+if ! apt install gnupg2 -y; then
+    echo "${RED} erro ao executar apt install gnupg2 -y ${NEUTRO}"
+    exit 1
+fi
+echo
+echo "${GREEN} apt install gnupg2 -y executado com sucesso ${NEUTRO}"
 ############################################################################
 echo
 echo "${YELLOW} executando import chaves gnupg2 ${NEUTRO}"

@@ -8,11 +8,12 @@ Meu LinkedIn: https://www.linkedin.com/in/adyson-lima-programador/
 
 ### Sobre o projeto
 
-Este script **instala** e **configura** servidores VPS Linux para deploy de aplicações Ruby on Rails.
+Este script **instala** e **configura** servidores VPS Debian 11 para deploy de aplicações Ruby on Rails.
 
 ### Recursos
 - [X] Atualização do sistema
 - [X] Atualização do PATH do sistema
+- [X] Instalação do POSTGRESQL
 - [X] Instalação do GIT
 - [X] Instalação do RVM
 - [X] Instalação do Ruby
