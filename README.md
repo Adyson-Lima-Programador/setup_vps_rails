@@ -1,19 +1,27 @@
-# Script para setup de servidores VPS Linux com hospedagem Ruby on Rails. 
+# Script que instala requisitos do Ruby on Rails em servidores VPS DEBIAN 11. 
 
-## Autor
+### Autor
 
 Adyson Lima
 
 Meu LinkedIn: https://www.linkedin.com/in/adyson-lima-programador/
 
-## Sobre o projeto
+### Sobre o projeto
 
 Este script **instala** e **configura** servidores VPS Linux para deploy de aplicações Ruby on Rails.
 
-## Layout da execução
+### Recursos
+- [X] Atualização do sistema
+- [X] Atualização do PATH do sistema
+- [X] Instalação do GIT
+- [X] Instalação do RVM
+- [X] Instalação do Ruby
+- [X] Instalação do Ruby on Rails
+
+### Layout da execução
 <img src="https://github.com/Adyson-Lima-Programador/setup_vps_rails/blob/main/imagem/setup.png" alt="setup.png"/>
 
-## Tecnologias utilizadas
+### Tecnologias utilizadas
 
 - Shell Script
 
