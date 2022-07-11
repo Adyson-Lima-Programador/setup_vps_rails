@@ -4,7 +4,7 @@
 
 Adyson Lima
 
-Meu LinkedIn: https://www.linkedin.com/in/adyson-lima-programador/
+<a href="https://www.linkedin.com/in/adyson-lima-programador/">Meu LinkedIn</a> 
 
 ### Sobre o projeto
 
