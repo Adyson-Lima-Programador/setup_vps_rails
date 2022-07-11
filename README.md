@@ -1,4 +1,4 @@
-# Script que instala requisitos do Ruby on Rails em servidores VPS DEBIAN 11. 
+# Bem vindo(a) ao Setup_Vps_Rails
 
 ### Autor
 
@@ -8,26 +8,29 @@ Adyson Lima
 
 ### Sobre o projeto
 
-Este script **instala** e **configura** servidores VPS Debian 11 para deploy de aplicações Ruby on Rails.
+Este é um ShellScript que **instala** dependências necessárias à servidores VPS Debian 11 para uso com Ruby on Rails.
 
 ### Recursos
 - [X] Atualização do sistema
 - [X] Atualização do PATH do sistema
 - [X] Instalação do POSTGRESQL
+- [X] Instalação do APACHE
 - [X] Instalação do GIT
+- [X] Instalação do NVM
+- [X] Instalação do NODE
 - [X] Instalação do RVM
-- [X] Instalação do Ruby
-- [X] Instalação do Ruby on Rails
+- [X] Instalação do RUBY
+- [X] Instalação do RUBY on RAILS
 
 ### Layout da execução
 <img src="https://github.com/Adyson-Lima-Programador/setup_vps_rails/blob/main/imagem/setup.png" alt="setup.png"/>
 
 ### Tecnologias utilizadas
 
-- Shell Script
+- ShellScript
 
 ## Implantação em produção
-- Back end: servidor Linux VPS
+- Back end: servidor Linux VPS Debian 11
 
 ## Como executar o projeto
 

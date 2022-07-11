@@ -34,7 +34,7 @@ if ! apt upgrade -y; then
     exit 1
 fi
 echo
-echo "${GREEN} apt-get upgrade -y executado com sucesso ${NEUTRO}"
+echo "${GREEN} apt upgrade -y executado com sucesso ${NEUTRO}"
 ############################################################################
 echo
 echo "${YELLOW} executando apt install postgresql -y ${NEUTRO}"
@@ -44,7 +44,17 @@ if ! apt install postgresql -y; then
     exit 1
 fi
 echo
-echo "${GREEN} apt-get install postgresql -y executado com sucesso ${NEUTRO}"
+echo "${GREEN} apt install postgresql -y executado com sucesso ${NEUTRO}"
+############################################################################
+echo
+echo "${YELLOW} executando apt install apache2 -y ${NEUTRO}"
+echo
+if ! apt install apache2 -y; then
+    echo "${RED} erro ao executar apt install apache2 -y ${NEUTRO}"
+    exit 1
+fi
+echo
+echo "${GREEN} apt install apache2 -y executado com sucesso ${NEUTRO}"
 ############################################################################
 echo
 echo "${YELLOW} executando apt install git -y ${NEUTRO}"
@@ -75,6 +85,26 @@ if ! apt install gnupg2 -y; then
 fi
 echo
 echo "${GREEN} apt install gnupg2 -y executado com sucesso ${NEUTRO}"
+############################################################################
+echo
+echo "${YELLOW} executando instalação NVM ${NEUTRO}"
+echo
+if ! curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash; then
+    echo "${RED} erro ao executar instalação NVM ${NEUTRO}"
+    exit 1
+fi
+echo
+echo "${GREEN} instalação NVM executada com sucesso ${NEUTRO}"
+############################################################################
+echo
+echo "${YELLOW} executando instalação NODE ${NEUTRO}"
+echo
+if ! bash -l -c "nvm install node --lts"; then
+    echo "${RED} erro ao executar instalação NODE ${NEUTRO}"
+    exit 1
+fi
+echo
+echo "${GREEN} instalação NODE executada com sucesso ${NEUTRO}"
 ############################################################################
 echo
 echo "${YELLOW} executando import chaves gnupg2 ${NEUTRO}"
